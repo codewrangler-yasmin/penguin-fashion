@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --bg-dark: #0b0223;
+  --bg-white: #ffffff;
+  --bg-off-white: #fffff4;
+  --bg-light-gray: #f1f1f1;
+  --bg-royal-blue: #2a1e59;
+
+  --text-white: #ffffff;
+  --text-primary: #3e3e3e;
+  --text-dark: #363958;
+  --text-medium-dark: #3c3c3c;
+  --text-green: #76c27e;
+
+  --font-regular: "Roboto", sans-serif;
+  --font-special: "Bebas Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var();
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+p {
+  color: var();
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+  color: var();
+  font-family: var();
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: 0 solid;
+  color: var();
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: var();
+  color: var();
+}
+.section-padding {
+  padding: 80px 0;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-justify {
+  text-align: justify;
+}
+.pt-0 {
+  padding-top: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.flex {
+  display: flex;
+}
+.flex-dir {
+  flex-direction: column;
+  justify-self: center;
+  gap: 24px;
+}
