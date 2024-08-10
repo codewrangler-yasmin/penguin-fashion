@@ -38,15 +38,10 @@
   .navbar-container {
     padding: 45px 30px;
   }
-  /* .mobile-nav {
-    display: block;
-    grid-column: 11 / 13;
-    justify-self: end;
-    align-self: center;
+
+  .section-title .title {
+    text-align: center;
   }
-  .mobile-nav a {
-    font-size: 1.5rem;
-  } */
   .logo {
     grid-column: 1 /4;
   }
@@ -74,6 +69,19 @@
 }
 /* Wide Mobile Layout: 576px. */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  main {
+    display: grid;
+  }
+
+  .section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section-title .title {
+    text-align: center;
+  }
+
   .container {
     width: 100%;
     padding-left: 15px;
@@ -113,9 +121,35 @@
   .banner-text p {
     font-size: 1rem;
   }
+  #services {
+    grid-row: 2 / 3;
+  }
+
+  .service-img {
+    grid-row: 1 / 2;
+    margin-bottom: 40px;
+  }
+
+  .single-service-box {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 576px) {
+  main {
+    display: grid;
+  }
+
+  .section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section-title .title {
+    text-align: center;
+  }
+
   .container {
     width: 100%;
     padding-left: 15px;
@@ -155,5 +189,18 @@
   }
   .banner-img img {
     height: auto !important;
+  }
+  #services {
+    grid-row: 2 / 3;
+  }
+
+  .service-img {
+    grid-row: 1 / 2;
+    margin-bottom: 40px;
+  }
+
+  .single-service-box {
+    flex-direction: column;
+    text-align: center;
   }
 }
