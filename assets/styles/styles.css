@@ -5,12 +5,17 @@
   --bg-off-white: #fffff4;
   --bg-light-gray: #f1f1f1;
   --bg-royal-blue: #2a1e59;
+  --bg-olive: linear-gradient(180deg, #a4bc46 0%, #85a019 100%);
+  --bg-blue: linear-gradient(180deg, #3d4ff3 0%, #3543bc 100%);
 
   --text-white: #ffffff;
   --text-primary: #3e3e3e;
   --text-dark: #363958;
   --text-medium-dark: #3c3c3c;
   --text-green: #76c27e;
+  --text-olive: #a4bc46;
+  --text-yellow: #fabe4c;
+  --text-orange: #fa804c;
 
   --font-regular: "Roboto", sans-serif;
   --font-special: "Bebas Neue", sans-serif;
@@ -47,7 +52,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: 0 solid;
-  color: var(--text-medium-dark);
+  color: var(--text-white);
 }
 
 img {
@@ -118,6 +123,7 @@ h6 {
   display: inline-block;
 }
 .btn {
+  border-radius: 10px;
   color: var(--text-white);
   font-size: 1rem;
   font-weight: 500;
@@ -128,9 +134,17 @@ h6 {
   justify-content: center;
   gap: 10px;
 }
-.btn-primary {
-  border-radius: 10px;
+.btn-olive {
+  background: var(--bg-olive);
+}
+.btn-orange {
+  background: var(--bg-orange);
+}
+.btn-dark-blue {
   background: var(--bg-royal-blue);
+}
+.btn-blue {
+  background: var(--bg-blue);
 }
 .btn img {
   height: 24px;
@@ -139,8 +153,20 @@ h6 {
 .btn-inner {
   gap: 10px;
 }
-.highlight {
+.highlight-green {
   color: var(--text-green);
+}
+.highlight-olive {
+  color: var(--text-olive);
+}
+.highlight-yellow {
+  color: var(--text-yellow);
+}
+.highlight-orange {
+  color: var(--text-orange);
+}
+.highlight-blue {
+  color: var(--text-dark);
 }
 /* header container styles */
 #header-container {
@@ -189,12 +215,16 @@ ul.nav-links > li > a:hover {
 }
 /* banner styles */
 .banner-text {
-  grid-column: 1 / 5;
+  grid-column: 1 / 6;
   align-self: center;
+  padding: 80px 0;
+}
+.banner-text-right {
+  grid-column: 8 / 13;
 }
 .banner-text h2 {
   font-family: var(--font-special);
-  font-size: 7.5rem;
+  font-size: 6.5rem;
   line-height: 1;
   font-weight: 500;
 }
@@ -203,7 +233,6 @@ ul.nav-links > li > a:hover {
 }
 .banner-img {
   grid-column: 8 / 13;
-  background-image: url(../images/icons/green.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -212,6 +241,25 @@ ul.nav-links > li > a:hover {
 }
 .banner-img img {
   width: auto;
+}
+.img-bg-1 {
+  background-image: url(../images/icons/olive.png);
+  position: relative;
+}
+.img-bg-2 {
+  grid-column: 1 / 6;
+}
+.img-bg-1 img {
+  position: absolute;
+  left: 8%;
+  top: -4%;
+  height: 570px !important;
+}
+
+.img-bg-3 {
+  background-image: url(../images/icons/green.png);
+}
+.img-bg-3 img {
   height: 490px !important;
 }
 /* services styles */
@@ -266,6 +314,10 @@ ul.nav-links > li > a:hover {
   border-radius: 20px;
   background: var(--bg-light-gray);
   padding: 24px 34px;
+  text-align: center;
+}
+.product-img img {
+  height: 300px;
 }
 .product-details .title {
   font-size: 1.5rem;
@@ -275,8 +327,18 @@ ul.nav-links > li > a:hover {
   align-items: center;
   justify-content: space-between;
 }
-.price {
+.price-green {
   color: var(--text-green);
+  font-size: 2.9rem;
+  font-weight: 900;
+}
+.price-yellow {
+  color: var(--text-yellow);
+  font-size: 2.9rem;
+  font-weight: 900;
+}
+.price-orange {
+  color: var(--text-orange);
   font-size: 2.9rem;
   font-weight: 900;
 }

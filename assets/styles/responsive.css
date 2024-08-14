@@ -3,6 +3,24 @@
   .container {
     width: 100%;
   }
+  .banner-text {
+    grid-column: 1 / 7;
+    align-self: center;
+    padding: 80px 0;
+  }
+  .img-bg-1 img {
+    position: absolute;
+    left: 3%;
+    top: -4%;
+    height: 540px !important;
+  }
+  .banner-text.banner-text-right {
+    grid-column: 7 / 13;
+    grid-row: 1 / 2;
+  }
+  .img-bg-2 {
+    grid-column: 1 / 6 !important;
+  }
 }
 /* Medium Layout: 1200px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -13,9 +31,23 @@
   }
   .banner-text {
     grid-column: 1 / 7;
+    padding: 0;
   }
   .banner-img {
     grid-column: 7 / 13;
+  }
+  .img-bg-1 img {
+    position: relative;
+    left: 4%;
+    top: 2%;
+    height: 450px !important;
+  }
+  .banner-text.banner-text-right {
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+  }
+  .img-bg-2 {
+    grid-column: 8 / 13 !important;
   }
   .services-content {
     grid-column: 1 / 7;
@@ -46,13 +78,25 @@
     grid-column: 1 /4;
   }
   .banner-text {
-    grid-column: 1 / 10;
+    grid-column: 1 / 13;
+    text-align: center;
   }
 
+  .img-bg-2 {
+    grid-column: 3 / 11 !important;
+    grid-row: 2 / 3;
+    padding: 0 !important;
+  }
   .banner-img,
   .services-content,
   .service-img {
     grid-column: 1 / 13;
+  }
+  .img-bg-1 img {
+    position: relative;
+    left: 2%;
+    top: 2%;
+    height: 410px !important;
   }
   .single-product-card {
     grid-column: span 6;
@@ -104,13 +148,20 @@
     justify-self: center;
   }
   .banner-text {
-    grid-column: 1 / 10;
+    grid-column: 1 / 13;
+    padding: 0;
   }
 
   .banner-img,
   .services-content,
   .service-img {
     grid-column: 1 / 13;
+  }
+  .img-bg-1 img {
+    position: relative;
+    left: 3%;
+    top: -3%;
+    height: 383px !important;
   }
   .single-product-card {
     grid-column: span 6;
@@ -120,6 +171,12 @@
   }
   .banner-text p {
     font-size: 1rem;
+  }
+
+  .img-bg-2 {
+    grid-column: 3 / 11 !important;
+    grid-row: 2 / 3;
+    padding: 0 !important;
   }
   #services {
     grid-row: 2 / 3;
@@ -172,7 +229,8 @@
     justify-self: center;
   }
   .banner-text {
-    grid-column: 1 / 10;
+    grid-column: 1 / 13;
+    padding: 0;
   }
 
   .banner-img,
@@ -189,6 +247,17 @@
   }
   .banner-img img {
     height: auto !important;
+  }
+  .img-bg-1 img {
+    position: relative;
+    left: 3%;
+    top: -3%;
+    height: 383px !important;
+  }
+  .img-bg-2 {
+    grid-column: 1 / 13 !important;
+    grid-row: 2 / 3;
+    padding: 0 !important;
   }
   #services {
     grid-row: 2 / 3;
